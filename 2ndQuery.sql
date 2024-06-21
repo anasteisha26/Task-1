@@ -13,8 +13,8 @@ FROM students;
 SELECT
 r.id,
 r.name,
-COUNT(s.name) as amount_of_students_living_in_a_room,
-AVG(aos.age) as average_age
+COUNT(s.name) as 'amount of students living in a room',
+AVG(aos.age) as 'average age'
 FROM rooms as r
 LEFT JOIN students as s
 ON r.id = s.room 
