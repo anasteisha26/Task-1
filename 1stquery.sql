@@ -1,4 +1,4 @@
-CREATE VIEW aamount_of_students AS 
+CREATE VIEW amount_of_students AS 
 SELECT  
 r.id, 
 r.name as room_n, 
