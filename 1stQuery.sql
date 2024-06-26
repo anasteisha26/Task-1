@@ -1,17 +1,10 @@
-CREATE VIEW amount_of_students AS 
-SELECT  
-r.id, 
-r.name as room_n, 
-s.name FROM rooms as r 
-LEFT JOIN students as s 
-ON s.room = r.id
-;
-
 SELECT
-id,
-room_n as 'name of the room',
-COUNT(name) as 'amount of people living in a room'
-FROM students_rooms.amount_of_students
-GROUP BY id, room_n
-ORDER BY id
+r.id as room_id,
+r.name as room_name,
+COUNT(s.name) as people_amount_in_a_room
+FROM rooms AS r 
+LEFT JOIN students AS s 
+ON s.room = r.id
+GROUP BY r.id, r.name
+ORDER BY r.id
 ;
