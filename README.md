@@ -22,3 +22,20 @@ At the very beginning of the task, I was given 2 files - students.json and rooms
 ![image](https://github.com/anasteisha26/Task-1/assets/172603404/5ff1afec-b283-4fe3-937b-50c210e11fe1) ![image](https://github.com/anasteisha26/Task-1/assets/172603404/99edb9d0-93b6-43fb-ab3a-617b94610931)
 
 # Defined functions
+I needed a function to support connection between Python and MySQL. More than that, I also needed a SQLAlchemy engine.
+![image](https://github.com/anasteisha26/Task-1/assets/172603404/d7e96545-d1f5-4180-9c5e-d88d6475cb36)
+
+Then I needed a simple function that could return execute queries using cursor object.
+![image](https://github.com/anasteisha26/Task-1/assets/172603404/8a40400b-5c80-478f-bb9e-026d9a730d65)
+
+This fucntion specifies the amount of files needed to be loaded and, in a form of a cycle, requests a path to each file. After receiving the path, the function loads the data into corresponding table in a database.
+![image](https://github.com/anasteisha26/Task-1/assets/172603404/c1d473c2-07b4-48a5-8199-922beca03106)
+
+This one is a big function that refers to 3 other functions inside of it. It performs a full cycle of work to the queries passed in it.
+![image](https://github.com/anasteisha26/Task-1/assets/172603404/f3d78264-4150-401f-9dd8-b31cb4d52945)
+
+The 3 functions being used inside of the full-cycle function:
+![image](https://github.com/anasteisha26/Task-1/assets/172603404/fa5930e2-a615-43ee-b1be-5b91c2ee4178)
+
+# Logging
+The logging was added  using 'logging' module in Python.
