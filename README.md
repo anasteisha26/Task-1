@@ -31,7 +31,7 @@ Then I needed a simple function that could return execute queries using cursor o
 This fucntion specifies the amount of files needed to be loaded and, in a form of a cycle, requests a path to each file. After receiving the path, the function loads the data into corresponding table in a database.
 ![image](https://github.com/anasteisha26/Task-1/assets/172603404/c1d473c2-07b4-48a5-8199-922beca03106)
 
-This one is a big function that refers to 3 other functions inside of it. It performs a full cycle of work to the queries passed in it.
+This one is a big function that refers to 3 other functions inside of it. It performs a full cycle of work to the queries passed in it. It is able to accept an input fron=m the user, in which format to save: XML or JSON?
 ![image](https://github.com/anasteisha26/Task-1/assets/172603404/f3d78264-4150-401f-9dd8-b31cb4d52945)
 
 The 3 functions being used inside of the full-cycle function:
